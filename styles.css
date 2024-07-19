@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background: var(--Light-Grayish-Blue);
+}
+
+.article-container{
+    display: flex;
+    width: 60%;
+    margin: 100px auto;
+    background: #fff;
+    height: 350px;
+    border-radius: 10px;
+}
+.left-container{
+    width: 45%;
+    height: 100%;
+}
+.left-container img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.right-container{
+    width: 55%;
+    margin-left: 50px;
+    padding: 30px;
+}
+.right-container h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 25px;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+.right-container .para{
+    font-size: 16px;
+    line-height: 1.6rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: var(--Desaturated-Dark-Blue);
+}
+.author-container{
+    display: flex;
+    position: relative;
+}
+.author-container .author{
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+}
+.author-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.author-info p{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 3px;
+    color: var(--Light-Grayish-Blue)
+}
+.share{
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 18px;
+    background: var(--Light-Grayish-Blue);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.share-container{
+    display: inline-block;
+    position: relative;
+}
+
+.share-container-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 40px;
+    border-radius: 10px;
+    background: var(--Very-Dark-Grayish-Blue);
+}
+.share-container-content p{
+    color: var(--Grayish-Blue);
+    margin-right: 20px;
+}
+.share-container-content img{
+    margin-right: 20px;
+}
+.sharearrow{
+    position: absolute;
+    background: var(--Very-Dark-Grayish-Blue);
+    width: 30px;
+    height: 30px;
+    top: 50px;
+    rotate: 45deg;
+    margin-left: 120px;
+}
+.share-container{
+    position: absolute;
+    right: 13.5%;
+    bottom: 51.5%;
+    display: block;
+}
+.share-toggle{
+    display: none;
+}
